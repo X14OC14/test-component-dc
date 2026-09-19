@@ -1,22 +1,39 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>XIAOCIA</title>
-<meta name="description" content="Percobaan Discord Link Component Embed.">
+<meta name="description" content="Discord Link Component Embed test.">
 
 <meta property="og:title" content="XIAOCIA">
-<meta property="og:description" content="Percobaan Discord Link Component Embed.">
+<meta property="og:description" content="Discord Link Component Embed test.">
 
 <script id="discord:component-embed" type="application/json">
 {
   "component": {
     "type": 17,
-    "accent_color": 16729413,
+    "accent_color": 3524095,
     "components": [
       {
         "type": 10,
-        "content": "# XIAOCIA\nIni percobaan pertama pake **Link Component Embeds**. Kalau ini muncul rapi di Discord, berarti berhasil."
+        "content": "# XIAOCIA\nThis is my first attempt at using **Link Component Embeds**. If this appears properly in Discord, it means it worked."
+      },
+      {
+        "type": 9,
+        "components": [
+          {
+            "type": 10,
+            "content": "This is a Section with an image on the right."
+          }
+        ],
+        "accessory": {
+          "type": 11,
+          "media": {
+            "url": "https://x14oc14.github.io/test-component-dc/mafypixel_20260919193746.png"
+          }
+        }
       },
       {
         "type": 14
@@ -27,7 +44,7 @@
           {
             "type": 2,
             "style": 5,
-            "label": "Buka Website",
+            "label": "Open Website",
             "url": "https://xiaocia.my.id"
           }
         ]
@@ -36,9 +53,35 @@
   }
 }
 </script>
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  background: #0f1115;
+  color: #7f8792;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+p {
+  margin: 0;
+  font-size: 14px;
+  text-align: center;
+}
+</style>
 </head>
+
 <body>
-<h1>XIAOCIA</h1>
-<p>Halaman percobaan discord:component-embed. Kalau lo lihat ini di browser biasa, ya emang cuma halaman kosong gini — yang penting isi &lt;script&gt; di &lt;head&gt;-nya kebaca sama Discord.</p>
+
+<p>This page is intended to be viewed through Discord.</p>
+
 </body>
 </html>
